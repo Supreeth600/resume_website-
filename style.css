@@ -1,9 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
+{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
 }
 
 header {
@@ -22,15 +36,12 @@ header {
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
     color: white;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     margin: 0;
-    padding: 0;
 }
 
 nav ul li {
@@ -38,82 +49,107 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
     font-size: 18px;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-
 /* Home Page */
-.welcome {
+.home-section {
     text-align: center;
-    padding: 50px;
+    padding: 80px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.home-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 18px;
+    color: #666;
 }
 
 /* Resume Page */
-.resume {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.resume-section {
+    padding: 40px 20px;
 }
 
-.resume div {
+.resume-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resume-content div {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.resume h2 {
-    margin-top: 0;
+.resume-content h2 {
+    margin-bottom: 10px;
+    color: #333;
 }
 
-ul {
-    padding-left: 20px;
+.resume-content ul li {
+    margin-bottom: 8px;
 }
 
-ul li {
-    margin: 5px 0;
+.resume-content ul li strong {
+    font-weight: bold;
 }
 
 /* Bio-Data Page */
 .bio-section {
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px;
 }
 
 .bio-content {
     display: flex;
     justify-content: space-between;
-    max-width: 900px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .bio-image img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
+    border: 4px solid #333;
 }
 
 .bio-details {
-    max-width: 500px;
+    max-width: 600px;
 }
 
-.bio-details ul {
-    padding-left: 20px;
+.bio-details h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.bio-details ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
