@@ -7,7 +7,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    color: #fff;
+    color: #333;
 }
 
 a {
@@ -21,7 +21,7 @@ ul {
 }
 
 header {
-    background-color: #fff;
+    background-color: #333;
     color: white;
     padding: 10px 0;
 }
