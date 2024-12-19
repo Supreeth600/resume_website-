@@ -1,151 +1,76 @@
-{
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #FFDEE9, #B5FFFC);
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 20px;
 }
 
 header {
-    background-color: #333;
+    background: #FF6F61;
     color: white;
-    padding: 10px 0;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-nav ul {
-    display: flex;
-    margin: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 18px;
-}
-
-.home-section {
+    padding: 15px 0;
     text-align: center;
-    padding: 80px 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.home-section h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.home-section p {
-    font-size: 18px;
-    color: #666;
-}
-
-.resume-section {
-    padding: 40px 20px;
-}
-
-.resume-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.resume-content div {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.resume-content h2 {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.resume-content ul li {
-    margin-bottom: 8px;
-}
-
-.resume-content ul li strong {
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.bio-section {
-    padding: 40px 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    margin: 20px;
+header nav a:hover {
+    color: #FFD700;
+    text-decoration: underline;
 }
 
-.bio-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.bio-image img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 4px solid #333;
-}
-
-.bio-details {
-    max-width: 600px;
-}
-
-.bio-details h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #333;
-}
-
-.bio-details ul li {
-    font-size: 18px;
-    margin-bottom: 8px;
+main {
+    padding: 30px;
+    background: #FFB6C1;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
+    background: #6A5ACD;
     color: white;
+    padding: 10px 0 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+section h2 {
+    color: #FF4500;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #FFD700;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul li strong {
+    color: #FF4500;
+}
+
+ul li a {
+    color: #333;
+    text-decoration: none;
 }
